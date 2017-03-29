@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box; /*this is the calculation for padding and widths*/
+}
+
+
+		header {
+			background-color: #ff6666
+			padding: 20px;
+		}
+		
+		nav { 
+			text-align: right;
+			font-family: 'Merriweather Sans', sans-serif;
+		 }	
+
+		nav a {
+			color: #ffffff;
+			margin-right: 10px;
+		}
+
+/* this is the color for links in the document */
+		a {
+			color: orange;
+			text-decoration: none;
+		}
+
+		body {
+			background-image: url('../images/backgroundPirate.png');
+			text-align: center;
+			font-size: 16px; /*1em = 16px*/
+			color: white;
+			position: relative;
+		}
+
+		main{
+			background-color: #F1E9E4;
+			color:#3C3C3C;
+			padding:50px 0;
+			font-size: 1em; 
+			color: black;
+		}
+
+
+
+/* fonts, headings and paragraphs */
+
+		h1 {
+			font-family: 'Merriweather', sans-serif;
+			font-size: 70px;
+			font-style: italic;
+
+		}
+
+		h3 {
+			font-family: 'Merriweather', serif;
+			text-align: center;
+			font-style: italic;
+			color: white;
+		}
+
+		p {
+			text-align: center;
+			font-family: 'Merriweather Sans', sans-serif;
+			font-size: 1em;
+			line-height:1.5em;
+			width: 35em; 
+ 			margin:2em auto;
+ 			color: white;
+		}
+
+		hr {
+			border:none;
+			height:1px;
+			background-color: #fff;
+			width:30%;
+			margin:1em auto;
+		}
+/* id for css, when putting an id into css add a # infront #slogan  */
+
+		#slogan {
+			font-family: 'Merriweather', serif;
+			font-size: 20px;
+			color: #ffffff;
+		}
+
+		img #profileimage {
+			align-content: center;
+		}
+
+		.folio {
+			width:30em;
+ 			margin:2em auto;
+ 			text-align: center;
+
+		}
