@@ -1,0 +1,194 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box; /*this is the calculation for padding and widths*/
+}
+
+header {
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
+}	
+
+/* I'm a bit confused by why I have to have so many nav css groups, why can't I put them all in one? */
+nav{
+	background-color: #E8C66A; /*  How do I make my navbar slightly transparent so that the image below shows through, 
+	when I use RBGA, it just shows white behind it, not the image.  I have to somehow move the image up to lie beneath the navbar.  */
+	border: 1px black solid;
+    padding: 20px;
+	/*background-color: rgba(45, 45, 45, 0.5); */
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 12px;
+	text-align: inherit;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav a {
+	color: white;
+	padding:10px;
+	float: right; 
+	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
+	text-decoration: none;
+}
+
+/* End of nav groups*/
+
+body {
+	font-size: 16px; /*1em = 16px*/
+	color: white;
+}
+
+main{
+	background-color: #F1E9E4;
+	color:#3C3C3C;
+	font-size: 1em; 
+	color: black;
+}
+
+footer{
+	background-color: #FF957E;
+	border:1px black solid;
+	padding: 50px;
+	background-repeat: no-repeat;
+}
+
+/* fonts, headings and paragraphs */
+h1 {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-style:italic;
+	text-decoration: none; 
+}
+
+h3 {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-style: italic;
+	color: white;
+}
+
+p {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 1em;
+	line-height:1.5em;
+	width: 35em; 
+	margin:2em auto;
+	color: white;
+}
+
+hr {
+	border:none;
+	height:1px;
+	background-color: #fff;
+	width:30%;
+	margin:1em auto;
+}
+
+/* id and class section  */
+img #navlogo {
+	align-content: left;
+	display: inline-block; 		
+}
+
+
+#landingimage {
+	background-image: url('../images/profileland.jpg');	/*  This landing image as well as all my main images aren't showing, I'm not sure why?  */
+	background-size: cover;
+	padding-bottom: 60%; 
+	padding-right: 20%;
+	padding-left: 20%;
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+
+#mainimage2 {
+	background-image: url('../images/mainimage2.jpg');	
+	background-size: cover;
+	padding-bottom: 60%; 
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+		
+#mainimage3{
+	background-image: url('../images/mainimage3.jpg');	
+	background-size: cover;
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+		
+#mainimage4{
+	background-image: url('../images/mainimage4.jpg');	
+	background-size: cover;
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+
+#mainimage5{
+	background-image: url('../images/mainimage5.jpg');	
+	background-size: cover;
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+
+#mainimage6{
+	background-image: url('../images/mainimage6.jpg');	
+	background-size: cover;
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+		
+		
+aside.Leftblurbslider{
+	/*padding: 3.5em 2.5em 3.5em 2.5em;*/
+	margin: 20% 60% 45% 0;
+	width: 40%;
+	height: 35%;
+	float: left;
+	/*background-color: rgba(255, 255, 255, 0.55);*/
+	background-color:#FFC675;
+	border: 1px black solid;
+	padding: 20px;
+	font-family: 'Merriweather', serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+aside.Rightblurbslider{  /* This is supposed to be on the right hand side of 
+	the page but it won't move from the left, what am I doing wrong? */
+	/* padding: 3.5em 2.5em 3.5em 2.5em;*/
+	margin: 12% 10% 12% 60%;
+	width: 40%;
+	height: 35%;
+	float;right: 
+	/*background-color: rgba(255, 255, 255, 0.55);*/
+	background-color:#FFC675;
+	border: 1px black solid;
+	padding: 20px;
+	font-family: 'Merriweather', serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: right;
+}
+
+button.buttondown {  
+	background-image: url('../images/whitedownarrow.png');
+	padding:55px;
+	border: none;
+	background-color: transparent;
+	align-content: center;
+	background-repeat: no-repeat;
+
+}
+	
