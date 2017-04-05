@@ -6,7 +6,7 @@
 	padding:0;
 	box-sizing: border-box; /*this is the calculation for padding and widths*/
 }
-
+/* I am trying to emulate the site created by one of the past GA students: https://abby-wilhelm.github.io/Iceland/  */
 header {
 	background-color: #FFED74;
 	border: 1px black solid;
@@ -103,9 +103,9 @@ img #navlogo {
 
 
 #landingimage {
-	background-image: url('../images/profileland.jpg');	/*  This landing image as well as all my main images aren't showing, I'm not sure why?  */
+	background-image: url('../images/profileland.jpg');	
 	background-size: cover;
-	padding-bottom: 60%; 
+	padding-bottom: 60%; /* I had to add these measurements to the first image otherwise it dissapears, but I'm confused as to why the others don't dissapear without it?*/
 	padding-right: 20%;
 	padding-left: 20%;
 	background-color: #FFE2B8;
@@ -142,7 +142,7 @@ img #navlogo {
 }
 
 #mainimage6{
-	background-image: url('../images/mainimage6.jpg');	
+	background-image: url('../images/mainimage6.jpg');	/*  all the code for the images is exactly the same, why does this image not fit properly and causes a huge gap?*/
 	background-size: cover;
 	background-color: #FFE2B8;
 	border: 1px black solid;
@@ -165,8 +165,7 @@ aside.Leftblurbslider{
 	text-align: left;
 }
 
-aside.Rightblurbslider{  /* This is supposed to be on the right hand side of 
-	the page but it won't move from the left, what am I doing wrong? */
+aside.Rightblurbslider{  /* The code for this box is the same as the one above, but they don't look the same, there is no colour on this one? what am I doing wrong? */
 	/* padding: 3.5em 2.5em 3.5em 2.5em;*/
 	margin: 12% 10% 12% 60%;
 	width: 40%;
