@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box; /*this is the calculation for padding and widths*/
+}
+
+header {
+	background-color: #36454f;  /*this is the padding around the nav */
+	border: 1px black solid;
+	padding: 20px;
+}	
+
+nav{
+	background-color: #36454f; /*  How do I make my navbar slightly transparent so that the image below shows through, 
+	when I use RBGA, it just shows white behind it, not the image.  I have to somehow move the image up to lie beneath the navbar.  */
+	border: 1px #36454f solid;
+    padding: 20px;
+	/*background-color: rgba(45, 45, 45, 0.5); */
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 12px;
+	text-align: inherit;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav a {
+	color: white;
+	padding:10px;
+	float: right; 
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ff8174;
+	text-decoration: none;
+}
+
+/* End of nav groups*/
+
+body {
+	font-size: 16px; /*1em = 16px*/
+	color: white;
+}
+
+main{
+	background-color: #F1E9E4;
+	color:#3C3C3C;
+	font-size: 1em; 
+	color: black;
+}
+
+footer{
+	background-color: #36454f;
+	border:1px black solid;
+	padding: 50px;
+	background-repeat: no-repeat;
+}
+
+/* fonts, headings and paragraphs */
+h1 {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+	font-style:italic;
+	text-decoration: none; 
+}
+
+h2 {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-align: center;
+	font-style:none;
+	text-decoration: none; 
+	color: black;
+}
+
+h3 {
+	font-family: 'Merriweather', serif;
+	font-size: 1em;
+	text-align: center;
+	font-style: bold;
+	color: black;
+}
+
+p {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 1em;
+	line-height:1.5em;
+	width: 35em; 
+	margin:2em auto;
+	color: black;
+}
+
+hr {
+	border:none;
+	height:1px;
+	background-color: #fff;
+	width:30%;
+	margin:1em auto;
+}
+
+/* id and class section  */
+img #navlogo {
+	align-content: left;
+	display: inline-block; 		
+}
+img #circleImage{
+	align-content: center;
+	display: inline-block;
+}
+
+#landingimage {
+	background-image: url('../images/landingimage.jpg');	/*  This landing image as well as all my main images aren't showing, I'm not sure why?  */
+	background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 550px;  /*really confused as to what I should be setting the padding as?*/
+}
+
+#two_column{
+	background-color: #fff;
+	border: 1px white solid;
+	padding: 20px;
+}
+
+#left{
+    background-color: white;
+    border: 1px white solid;
+    padding: 20px;
+    float: left;
+    width: 48%;
+}
+
+#right{
+    background-color: white;
+    border: 1px white solid;
+    padding: 20px;
+    float: right;   
+    width: 48%;
+    height: 250px;
+}
+
+#blurbsliders{
+	background-color: white;
+	border: 1px white solid;
+	padding: 5px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+#mainimage2 {
+	background-image: url('../images/mainimage2.jpg');	
+	background-size: cover;
+	padding-bottom: 25%; /*really confused as to what I should be setting the padding as?*/
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+		
+#mainimage3{
+	background-image: url('../images/mainimage3.jpg');	/*this image is only half appearing, what am I doing wrong?*/
+	background-size: cover;
+	padding-bottom: 25%;  /*really confused as to what I should be setting the padding as?*/
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+		
+#mainimage4{
+	background-image: url('../images/mainimage4.jpg');	/*this image is missing?*/
+	background-size: cover;
+		padding-bottom: 25%;  /*really confused as to what I should be setting the padding as?*/
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+
+#mainimage5{
+	background-image: url('../images/mainimage5.jpg');	/*this image is missing?*/
+	background-size: cover;
+		padding-bottom: 25%; /*really confused as to what I should be setting the padding as?*/
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+
+#mainimage6{
+	background-image: url('../images/mainimage6.jpg');	
+	background-size: cover;
+	padding-bottom: 25%;  /*really confused as to what I should be setting the padding as?*/
+	background-color: #FFE2B8;
+	border: 1px black solid;
+}
+	
+		
+aside.Leftblurbslider{
+	padding: 3.5em 2.5em 3.5em 2.5em;
+	margin: 20% 60% 45% 0;
+	width: 40%;
+	height: 35%;
+	float: left;
+	background-color: rgba(255, 255, 255, 0.55);
+	border: 1px black solid;
+	padding: 20px;
+	font-family: 'Merriweather', serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: left;
+}
+
+aside.Rightblurbslider{  
+	padding: 3.5em 2.5em 3.5em 2.5em;
+	margin: 12% 10% 12% 60%;
+	width: 40%;
+	height: 35%;
+	float;right: 
+	background-color: rgba(255, 255, 255, 0.55);
+	border: 1px black solid;
+	padding: 20px;
+	font-family: 'Merriweather', serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: right;
+}
+
+button.buttondown {  
+	background-image: url('../images/whitedownarrow.png');
+	padding:50px;
+	position: absolute;
+	border: none;
+	background-color: transparent;
+	align-content: center;
+	background-repeat: no-repeat;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	display: block;
+	width: 100px;
+}
+	
