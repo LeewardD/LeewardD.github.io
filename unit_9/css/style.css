@@ -1,0 +1,489 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Give+You+Glory');
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box; /*this is the calculation for padding and widths*/
+}
+
+header {
+	display: block;
+	width: 100%;
+}	
+
+nav{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	width: 100%;
+}
+
+/*nav a {
+	color: black;
+	padding:1em;
+	float: right; 
+	text-decoration: none;
+}*/
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+	color: #ff8174;
+	text-decoration: none;
+}
+
+ul {
+	float: right;
+	padding-top: 25px;
+}
+
+ul li {
+display: inline-block;
+}
+
+li a {
+	display: block;
+	color: black;
+	text-align: right;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a: hover {
+	background-color: pink;
+}
+/* End of nav groups*/
+
+body {
+	font-size: 16px; /*1em = 16px*/
+	color: white;
+	width: 100%;
+}
+
+main{
+	background-size: 100%;
+	font-size: 1em; 
+	color: black;
+	margin: 0;
+}
+
+footer{
+	background-color: #293445;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 3%;
+}
+
+/* fonts, headings and paragraphs */
+h1 {
+	font-family: 'Give You Glory', cursive;
+	font-size: 2em;
+	font-style: bold;
+	text-decoration: none; 
+}
+
+h2 {
+	font-family: 'Give You Glory', cursive;
+	font-size: 1.5em;
+	text-align: center;
+	font-style: none;
+	text-decoration: none; 
+	color: black;
+}
+
+h3 {
+	font-family: 'Give You Glory', cursive;
+	font-size: 1em;
+	text-align: center;
+	font-style: bold;
+	color: black;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 1em;
+	line-height: 1.5em;
+	width: 35em; 
+	margin: 2em auto;
+	color: black;
+}
+
+label{
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	padding:0 32px;
+	font-size: .8em;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	display: none;
+}
+
+/* id and class section  */
+
+#wrapper {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#sliders{
+	background-color: #fff;
+}
+
+#toggle{
+	display: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.landimages {
+	position: relative;
+}
+
+.landimages img {
+	display: block;
+	width: 100%;
+}
+
+.left-slider{
+	background-color: rgba(255, 255, 255, 0.55);
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: left;
+	width: 33.33%;	
+	position: absolute;
+	top: 50%;
+	left:-100%;
+	padding: 2%;
+	transform: translateY(-50%);
+	-webkit-transition: all 2s ease-in-out;
+ 	 -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+  	transition: all 2s ease-in-out;
+}
+.reveal .left-slider {
+	left:0;
+}
+
+.right-slider{  
+	background-color: rgba(255, 255, 255, 0.55);
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: right;
+	width: 33.33%;	
+	position: absolute;
+	top: 50%;
+	right: -100%;
+	padding: 2%;
+	transform: translateY(-50%);
+	-webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+.reveal .right-slider{
+	right: 0;
+}
+.left-slider p, .right-slider p {
+	margin:0;
+	width: auto;
+}
+
+
+.buttondown {  
+	background-image: url('../images/whitedownarrow.png');
+	padding:4%;
+	position: absolute;
+	border: none;
+	background-color: transparent;
+	align-content: center;
+	background-repeat: no-repeat;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	display: block;
+	width: 100px;
+}
+/* footer section start*/
+.copyright {
+	color: white;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	align-content: left;
+	padding: 2em;
+	float: left;
+}
+
+.social-links a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+	color: #fff;
+}
+
+
+.termsandconditions {
+	color: white;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	align-content: right;
+	padding: 2em;
+	float: right;
+}
+
+.folio-wrapper {
+
+}
+
+
+/*  gallery I found on the internet, section start*/
+.gallery {
+  	width: 1040px;
+  	margin: 0 auto;
+  	padding: 5px;
+  	background: #fff;
+  	box-shadow: 0 1px 2px 
+  	rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  	position: relative;
+  	float: left;
+  	padding: 5px;
+}
+
+.gallery > div > img {
+  	display: block;
+  	width: 333.33px;
+  	transition: .1s transform;
+  	transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  	z-index: 1;
+}
+
+.gallery > div:hover > img {
+  	transform: scale(1.7,1.7);
+  	transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  	display: table;
+  	content: "";
+  	line-height: 0;
+}
+
+.cf:after {
+  	clear: both;
+}
+
+/*gallery section end*/
+
+/*contact form*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*contact form end*/
+
+
+
+/* Media Queries for Landing Page */
+
+
+
+@media only screen and (max-width: 800px){
+
+
+.reveal .left-slider {
+	left:0;
+}
+
+.left-slider p {
+	display: none;
+}
+
+.left-slider h1 {
+	font-size: 2em;
+}
+
+.reveal .right-slider{
+	right: 0;
+}
+.left-slider p, .right-slider p {
+	margin:0;
+	width: auto;
+}
+.right-slider p {
+	display: none;
+}
+
+.right-slider h1 {
+	font-size: 2em;
+}
+}
+
+
+@media only screen and (max-width: 1188px){
+
+.buttondown {  
+	display: none;
+	}
+}
+
+@media only screen and (max-width: 695px){
+	
+	nav{
+		display: none;
+	}
+
+	nav a:link{
+		display: block;
+		padding:8px;
+		margin:2px;
+		text-align: center;
+		font-size: .8em;
+	}
+
+	label{
+		display: block;
+		padding: 10px;
+	}
+
+	#toggle:checked + nav{
+		display: block;
+	}
+
+	ul {
+		float: none;
+		padding-top: 0;
+	}
+
+	ul li {
+		display: block;
+	}
+
+	nav img {
+		display:none;
+	}
+
+}
+
+@media only screen and (max-width: 600px){
+
+.reveal .left-slider {
+	left:0;
+}
+
+.left-slider p {
+	display: none;
+}
+
+.left-slider h1 {
+	font-size: 1.5em;
+}
+
+.reveal .right-slider{
+	right: 0;
+}
+.left-slider p, .right-slider p {
+	margin:0;
+	width: auto;
+}
+.right-slider p {
+	display: none;
+}
+
+.right-slider h1 {
+	font-size: 1.5em;
+}
+}
+
+@media only screen and (max-width: 455px){
+
+.reveal .left-slider {
+	left:0;
+}
+
+.left-slider p {
+	display: none;
+}
+
+.left-slider h1 {
+	font-size: 1em;
+}
+
+.reveal .right-slider{
+	right: 0;
+}
+.left-slider p, .right-slider p {
+	margin:0;
+	width: auto;
+}
+.right-slider p {
+	display: none;
+}
+
+.right-slider h1 {
+	font-size: 1em;
+}
+}
